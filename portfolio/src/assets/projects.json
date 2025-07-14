@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "title": "Aplikacja bar z koktajlami",
+        "languages": [
+            {
+                "name": "React",
+                "type": "frontend"
+            },
+            {
+                "name": "expressJS",
+                "type": "backend"
+            },
+            {
+                "name": "mongoDB",
+                "type": "database"
+            }
+        ],
+        "description": "Projekt stworzony podczas studiów. Obejmuje najważniejsze aspekty nowoczesnych aplikacji: zasady REST API, modernistyczny wygląd oraz bycie przyjazne dla użytkownika",
+        "link": "https://github.com/olewna/cocktailbar",
+        "images": [
+            {
+                "url": "assets/1/1.png"
+            }
+        ]
+    }
+]

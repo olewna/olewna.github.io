@@ -1,0 +1,25 @@
+<main>
+    <div>
+        <ul>
+            @for (project of projects; track project.id) {
+            <li class="card">
+                <div class="title">{{project.title}}</div>
+                <ul>
+                    @for (language of project.languages; track $index) {
+                    <li class="language">{{language.type}} - {{language.name}}</li>
+                    }
+                </ul>
+                <ul>
+                    @for (image of project.images; track $index) {
+                    <li>
+                        <img [src]="image.url" [alt]="project.title + ' image'" />
+                    </li>
+                    }
+                </ul>
+                <div>{{project.description}}</div>
+                <div class="link">{{project.link}}</div>
+            </li>
+            }
+        </ul>
+    </div>
+</main>
