@@ -3,6 +3,7 @@
     --font-color: rgb(220, 220, 220);
     --violet: #764ada;
     --border-color-nav: #0e1630;
+    --another-font-color: rgb(128, 128, 128);
 }
 
 html {
@@ -20,6 +21,8 @@ body {
     padding: 0;
 }
 
+// defaultowy wyglad przycisku
+
 .btn {
     display: inline-block;
     padding: 14px 40px;
@@ -36,4 +39,29 @@ body {
     transform: scale(1.01) translateY(-5px);
     background: transparent;
     border: 1px solid var(--violet);
+}
+
+// animacja imienia kolorowa
+
+.name {
+    background: linear-gradient(to right,
+            #7953cd 20%,
+            #00affa 30%,
+            #0190cd 70%,
+            #764ada 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+
+    @keyframes textShine {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        100% {
+            background-position: 100% 50%;
+        }
+    }
 }
