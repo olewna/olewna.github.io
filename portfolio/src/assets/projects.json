@@ -4,7 +4,7 @@
         "title": "Aplikacja bar z koktajlami",
         "languages": [
             {
-                "name": "React",
+                "name": "React v.18",
                 "type": "frontend"
             },
             {
@@ -17,19 +17,22 @@
             }
         ],
         "description": "Projekt stworzony podczas studiów. Obejmuje najważniejsze aspekty nowoczesnych aplikacji: zasady REST API, modernistyczny wygląd oraz bycie przyjazne dla użytkownika",
-        "link": "https://github.com/olewna/cocktailbar",
+        "links": ["https://github.com/olewna/cocktailbar"],
         "images": [
             {
-                "url": "assets/1/1.png"
+                "url": "assets/1/2.png"
+            },
+            {
+                "url": "assets/1/3.png"
             }
         ]
     },
     {
         "id": "2",
-        "title": "Aplikacja bar z koktajlami 2",
+        "title": "StreamDaylio - aplikacja do wybierania zestawu dla graczy",
         "languages": [
             {
-                "name": "React",
+                "name": "Angular v.16",
                 "type": "frontend"
             },
             {
@@ -41,20 +44,47 @@
                 "type": "database"
             }
         ],
-        "description": "Projekt stworzony podczas studiów. Obejmuje najważniejsze aspekty nowoczesnych aplikacji: zasady REST API, modernistyczny wygląd oraz bycie przyjazne dla użytkownika",
-        "link": "https://github.com/olewna/cocktailbar",
+        "description": "Ten projekt to moja praca licencjacka. Wykorzystuje w nim model MVC (Model-View-Controller), Dependency Injection oraz oczywiście REST API. Baza danych MongoDB to dokumentowa baza - dokładniej została użyta chmurowa baza MongoDB - MongoDB Atlas. Nawet wystawiłem ją na azurze, jednak tylko na kilka miesięcy...",
+        "links": ["https://github.com/olewna/licencjat"],
         "images": [
             {
-                "url": "assets/1/1.png"
+                "url": "assets/2/1.png"
+            },
+            {
+                "url": "assets/2/2.png"
+            },
+            {
+                "url": "assets/2/3.png"
+            },
+            {
+                "url": "assets/2/4.png"
+            },
+            {
+                "url": "assets/2/5.png"
+            },
+            {
+                "url": "assets/2/6.png"
+            },
+            {
+                "url": "assets/2/7.png"
+            },
+            {
+                "url": "assets/2/8.png"
+            },
+            {
+                "url": "assets/2/9.png"
+            },
+            {
+                "url": "assets/2/10.png"
             }
         ]
     },
     {
         "id": "3",
-        "title": "Aplikacja bar z koktajlami 3",
+        "title": "Serwis Y - na wzór twittera",
         "languages": [
             {
-                "name": "React",
+                "name": "VueJS v.3",
                 "type": "frontend"
             },
             {
@@ -62,15 +92,134 @@
                 "type": "backend"
             },
             {
-                "name": "mongoDB",
+                "name": "Neo4J",
                 "type": "database"
             }
         ],
-        "description": "Projekt stworzony podczas studiów. Obejmuje najważniejsze aspekty nowoczesnych aplikacji: zasady REST API, modernistyczny wygląd oraz bycie przyjazne dla użytkownika",
-        "link": "https://github.com/olewna/cocktailbar",
+        "description": "Projekt końcowy na przedmiot z VueJS. Aplikacja ma możliwość logowania, rejestracji, a po zalogowaniu dodawania wpisów, cytowania wpisów innych użytkowników i komentowania. Trudność tej aplikacji polegała na zrobienia zagnieżdżenia cytowania, aby dobrze były wyświetlane posty. Do projektu została wykorzystana baza danych Neo4J, która jest bazą grafową. Składa się z węzłów czyli obiektów oraz relacji. O wyborze tej bazy właśnie przeważyły relacje, które ułatwiają logikę aplikacji.",
+        "links": ["https://github.com/olewna/vue3_y.com"],
         "images": [
             {
-                "url": "assets/1/1.png"
+                "url": "assets/3/1.png"
+            },
+            {
+                "url": "assets/3/2.png"
+            },
+            {
+                "url": "assets/3/3.png"
+            },
+            {
+                "url": "assets/3/4.png"
+            },
+            {
+                "url": "assets/3/5.png"
+            },
+            {
+                "url": "assets/3/6.png"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "title": "Blog`o - internetowy blog",
+        "languages": [
+            {
+                "name": "Angular v.16",
+                "type": "frontend"
+            },
+            {
+                "name": "expressJS",
+                "type": "backend"
+            },
+            {
+                "name": "Neo4J",
+                "type": "database"
+            }
+        ],
+        "description": "Mały projekt, który miał na celu sprawdzenie znajomości Angulara jego mechanik i wzorców. W tym projekcie skupiłem się na strukturze projektu, aby była schludna i czytelna dla innych deweloperów. Design aplikacji jest prosty. W tym wypadku wykorzystałem bazę danych Neo4J, która jest bazą grafową, aby łatwiej było łączyć posty z użytkownikami poprzez relacje.",
+        "links": ["https://github.com/olewna/angular_blog"],
+        "images": [
+            {
+                "url": "assets/4/1.png"
+            },
+            {
+                "url": "assets/4/2.png"
+            },
+            {
+                "url": "assets/4/3.png"
+            },
+            {
+                "url": "assets/4/4.png"
+            },
+            {
+                "url": "assets/4/5.png"
+            },
+            {
+                "url": "assets/4/6.png"
+            },
+            {
+                "url": "assets/4/7.png"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "title": "OSK LKD - strona  szkoły jazdy",
+        "languages": [
+            {
+                "name": "Angular v.17",
+                "type": "frontend"
+            },
+            {
+                "name": "WordPress",
+                "type": "deployment"
+            }
+        ],
+        "description": "Projekt dla Ośrodka Szkolenia Kierowców LKD. Aplikacja jest napisana w Angularze w wersji 17, aby poznać jakie zmiany zaszły od poprzedniej wersji. Dodatkowo na stronie jest widoczna mapa z miejscem, gdzie znajduje się OSK LKD, a także są oceny klientów. Projekt jest zrobiony jako motyw i wystawiony na WordPressie. Przez ten aspekt musiałem dodatkowo poznać trochę PHP, żeby była możliwość stworzenia swojego własnego motywu strony. Strona jest w pełni responsywna, co uważam za swój sukces. :)",
+        "links": ["https://osk-lkd.pl"],
+        "images": [
+            {
+                "url": "assets/5/1.png"
+            },
+            {
+                "url": "assets/5/2.png"
+            },
+            {
+                "url": "assets/5/3.png"
+            },
+            {
+                "url": "assets/5/4.png"
+            },
+            {
+                "url": "assets/5/5.png"
+            },
+            {
+                "url": "assets/5/6.png"
+            },
+            {
+                "url": "assets/5/7.png"
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "title": "Blenderowe kreacje",
+        "languages": [
+            {
+                "name": "Blender",
+                "type": "po prostu blender!"
+            }
+        ],
+        "description": "Tworzyłem trochę kreacji w Blenderze, ucząc się od najlepszego polskiego blenderowego Guru. Nie jestem jakimś perfekcjonistą co do tego, ale przynajmniej coś porobiłem w tym, więc się pochwale! (Pierwszy link jest do kursu od Pana Piotao - serdecznie polecam!!!)",
+        "links": ["https://inf.ug.edu.pl/~piotao/zajecia/sylabusy/grafika/kurs.php","https://github.com/olewna/grafika_3D", "https://github.com/olewna/animancja"],
+        "images": [
+            {
+                "url": "assets/blender/dynia.png"
+            }            
+        ],
+        "videos": [
+            {
+                "url": "assets/blender/final_animacja.mp4"
             }
         ]
     }

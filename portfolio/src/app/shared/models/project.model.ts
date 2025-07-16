@@ -3,7 +3,8 @@ export interface Project {
   title: string;
   languages: Language[];
   description: string;
-  link: string;
+  links: string[];
+  videos: Video[];
   images: Image[];
 }
 export interface ProjectModel {
@@ -19,5 +20,8 @@ export interface Language {
 }
 
 export interface Image {
+  url: string;
+}
+export interface Video {
   url: string;
 }
