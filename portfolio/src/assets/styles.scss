@@ -1,7 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --background-color: #0a0a14;
+    --font-color: rgb(220, 220, 220);
+    --violet: #764ada;
+    --border-color-nav: #0e1630;
+}
+
 html {
-    background-color: rgb(31, 31, 31);
-    color: rgb(220, 220, 220);
+    background-color: var(--background-color);
+    color: var(--font-color);
 
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -12,4 +18,22 @@ html {
 body {
     margin: 0;
     padding: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 40px;
+    border-radius: 0.5rem;
+    font-size: 17px;
+    font-weight: 500;
+    background: var(--violet);
+    color: var(--font-color);
+    border: 1px solid var(--violet);
+    transition: all .40s ease;
+}
+
+.btn:hover {
+    transform: scale(1.01) translateY(-5px);
+    background: transparent;
+    border: 1px solid var(--violet);
 }

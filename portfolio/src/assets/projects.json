@@ -23,5 +23,55 @@
                 "url": "assets/1/1.png"
             }
         ]
+    },
+    {
+        "id": "2",
+        "title": "Aplikacja bar z koktajlami 2",
+        "languages": [
+            {
+                "name": "React",
+                "type": "frontend"
+            },
+            {
+                "name": "expressJS",
+                "type": "backend"
+            },
+            {
+                "name": "mongoDB",
+                "type": "database"
+            }
+        ],
+        "description": "Projekt stworzony podczas studiów. Obejmuje najważniejsze aspekty nowoczesnych aplikacji: zasady REST API, modernistyczny wygląd oraz bycie przyjazne dla użytkownika",
+        "link": "https://github.com/olewna/cocktailbar",
+        "images": [
+            {
+                "url": "assets/1/1.png"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "title": "Aplikacja bar z koktajlami 3",
+        "languages": [
+            {
+                "name": "React",
+                "type": "frontend"
+            },
+            {
+                "name": "expressJS",
+                "type": "backend"
+            },
+            {
+                "name": "mongoDB",
+                "type": "database"
+            }
+        ],
+        "description": "Projekt stworzony podczas studiów. Obejmuje najważniejsze aspekty nowoczesnych aplikacji: zasady REST API, modernistyczny wygląd oraz bycie przyjazne dla użytkownika",
+        "link": "https://github.com/olewna/cocktailbar",
+        "images": [
+            {
+                "url": "assets/1/1.png"
+            }
+        ]
     }
 ]
