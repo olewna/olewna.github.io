@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectsService } from '../../../shared/service/projects.service';
 import { Project } from '../../../shared/models/project.model';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-details',
@@ -8,13 +10,26 @@ import { Project } from '../../../shared/models/project.model';
   styleUrl: './details.component.scss',
 })
 export class DetailsComponent implements OnInit {
-  constructor(private service: ProjectsService) {}
+  constructor(
+    private service: ProjectsService,
+    private route: ActivatedRoute,
+    private location: Location
+  ) {}
 
-  protected project!: Project;
+  protected project: Project | null = null;
+  protected id!: string;
 
   ngOnInit(): void {
+    this.id = this.route.snapshot.paramMap.get('id')!;
+
     this.service.getProjects().subscribe({
-      next: (res: Project[]) => {},
+      next: (res: Project[]) => {
+        this.project = res.filter((x) => x.id == this.id)[0];
+      },
     });
+  }
+
+  goBack() {
+    this.location.back();
   }
 }

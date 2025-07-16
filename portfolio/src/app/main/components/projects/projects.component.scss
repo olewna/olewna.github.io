@@ -1,0 +1,36 @@
+.card {
+    border: black solid 1px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 70%;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+
+    .title {
+        font-size: 48px;
+        font-family: "Playfair Display", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+// .card:hover {
+//     cursor: pointer;
+//     filter: brightness(1.2);
+// }
+
+.card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgb(31, 31, 31);
+    z-index: -1;
+    transition: filter 0.3s ease;
+}
+
+.card:hover::before {
+    filter: brightness(1.2);
+}
