@@ -1,30 +1,36 @@
 <section>
-    <div>
-        @if (project !== null) {
-            <ul>
+    <div class="container">
+        @if (project) {
+            <ul class="project">
                 <li class="card">
-                    <div class="title">{{project.title}}</div>
-                    <ul>
+                    <h1 class="title">{{project.title}}</h1>
+    
+                    <ul class="languages">
+                        <h3 class="technologies"><i>Wykorzystane technologie:</i></h3>
                         @for (language of project.languages; track $index) {
-                        <li class="language">{{language.type}} - {{language.name}}</li>
+                        <li class="language"><i><span class="lang-type">{{language.type}}</span></i><span class="lang-name"> - {{language.name}}</span></li>
                         }
                     </ul>
-                    <ul>
+    
+                    <ul class="images">
                         @for (image of project.images; track $index) {
                         <li>
                             <img [src]="image.url" [alt]="project.title + ' image'" />
                         </li>
                         }
                     </ul>
-                    <div>{{project.description}}</div>
-                    <div class="link">{{project.link}}</div>
+    
+                    <p>{{project.description}}</p>
+                    <a [href]="project.link" target="_blank"><i>{{project.link}}</i></a>
                 </li>
             </ul>
+    
         } @else {
             <div>Nie znaleziono projektu z podanym id!</div>
         }
-        <div>
-            <button (click)="goBack()">Wróć</button>
+    
+        <div class="button">
+            <button class="btn" (click)="goBack()">Wróć</button>
         </div>
     </div>
 </section>

@@ -24,7 +24,11 @@ export class DetailsComponent implements OnInit {
 
     this.service.getProjects().subscribe({
       next: (res: Project[]) => {
-        this.project = res.filter((x) => x.id == this.id)[0];
+        const result = res.filter((x) => x.id == this.id);
+
+        if (result.length > 0) {
+          this.project = result[0];
+        }
       },
     });
   }

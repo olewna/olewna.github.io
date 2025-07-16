@@ -46,16 +46,11 @@ section {
             }
         }
         
-        // .card:hover {
-        //     cursor: pointer;
-        //     filter: brightness(1.2);
-        // }
-        
         .card::before {
             content: '';
             position: absolute;
             inset: 0;
-            background-color: rgb(31, 31, 31);
+            background-color: var(--background-card);
             z-index: -1;
             transition: filter 0.3s ease;
         }
