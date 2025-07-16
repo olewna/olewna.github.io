@@ -6,6 +6,12 @@ export interface Project {
   link: string;
   images: Image[];
 }
+export interface ProjectModel {
+  id: string;
+  title: string;
+  languages: string;
+  images: Image[];
+}
 
 export interface Language {
   name: string;

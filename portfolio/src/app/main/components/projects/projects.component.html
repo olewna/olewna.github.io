@@ -1,25 +1,22 @@
 <section>
-    <div>
+    @if (loading) {
+        <div class="loading">Ładowanie...</div>
+    } @else if (projects.length > 0) {
         <ul>
             @for (project of projects; track project.id) {
             <li class="card" (click)="goToDetails(project.id)">
+                <div>
+                    <img [src]="project.images[0].url" [alt]="project.title + ' image'" />
+                </div>
+                <div class="language">{{project.languages}}</div>
                 <div class="title">{{project.title}}</div>
-                <ul>
-                    @for (language of project.languages; track $index) {
-                    <li class="language">{{language.type}} - {{language.name}}</li>
-                    }
-                </ul>
-                <ul>
-                    @for (image of project.images; track $index) {
-                    <li>
-                        <img [src]="image.url" [alt]="project.title + ' image'" />
-                    </li>
-                    }
-                </ul>
-                <div>{{project.description}}</div>
-                <div class="link">{{project.link}}</div>
             </li>
             }
         </ul>
-    </div>
+    } @else {
+        <div>Nie ma projektów :((</div>
+    }
 </section>
+
+ <!-- TODO ZROBIĆ ANIMACJE DLA KAŻDEGO Z DELAYEM -->
+<!-- TODO ZROBIĆ GRADIENTOWY BACKGROUND KTÓRY SIĘ RUSZA -->
