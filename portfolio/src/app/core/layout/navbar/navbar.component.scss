@@ -46,3 +46,39 @@
     color: var(--violet);
     cursor: pointer;
 }
+
+/* Domyślnie mobile menu ukryte */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #111;
+    padding: 15px;
+    width: 200px;
+    gap: 10px;
+}
+
+.mobile-menu.show {
+    display: flex;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* ✅ RESPONSYWNOŚĆ */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+        /* chowamy normalny pasek na mobile */
+    }
+
+    .menu-toggle {
+        display: block;
+        /* pokazujemy ikonkę menu */
+    }
+}

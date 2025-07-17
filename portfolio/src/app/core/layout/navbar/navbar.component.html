@@ -2,11 +2,21 @@
     <div class="logo">
         <span class="white">Port</span><span class="colored">folio</span>
     </div>
-    <ul class="nav-links">
+
+    <ul class="nav-links desktop-nav">
         <li><a (click)="gotoHome()">Strona główna</a></li>
         <li><a (click)="gotoProjects()">Projekty</a></li>
         <li><a (click)="gotoAbout()">O mnie</a></li>
         <!-- <li><a routerLink="/experience">Doświadczenie</a></li>
         <li><a routerLink="/skills">Umiejętności</a></li> -->
+    </ul>
+
+    <div class="menu-toggle mobile-nav" (click)="toggleMenu()">☰</div>
+    
+    <!-- Mobilne menu, które wysuwa się po kliknięciu -->
+    <ul class="nav-links mobile-menu" [ngClass]="{'show': menuOpen}">
+        <li><a (click)="gotoHome(); closeMenu()">Strona główna</a></li>
+        <li><a (click)="gotoProjects(); closeMenu()">Projekty</a></li>
+        <li><a (click)="gotoAbout(); closeMenu()">O mnie</a></li>
     </ul>
 </nav>
