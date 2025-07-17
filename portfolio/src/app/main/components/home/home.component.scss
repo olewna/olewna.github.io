@@ -24,6 +24,13 @@ main {
             }
         }
 
+        @media (max-width: 768px) {
+            .background-video {
+                width: auto;
+                height: 100%;
+            }
+        }
+
     .home-text {
         // width: 25%;
         display: inline-block;
@@ -42,3 +49,26 @@ main {
         }
     }
 }
+
+@media (max-width: 768px) {
+    main {
+        padding: 0;
+        padding-top: 10%;
+
+        .home-text {
+            max-width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-self: center;
+            
+        }
+    }
+}
+
+@media (max-height: 600px) {
+    main{
+        // padding: 0;
+        padding-top: 5%;
+    }
+} 
