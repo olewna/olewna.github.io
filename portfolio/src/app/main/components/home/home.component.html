@@ -1,6 +1,7 @@
 <main>
-    <video autoplay loop muted plays-inline class="background-video">
+    <video autoplay loop muted playsinline oncanplay="this.play()" onloadedmetadata="this.muted = true" class="background-video">
         <source src="assets/background-coding.mp4" type="video/mp4">
+        Przeglądarka nie jest wspierana
     </video>
     <div class="home-text">
         <h4>Hejka!</h4>
