@@ -243,6 +243,11 @@ License: "MIT"
 
 
 --------------------------------------------------------------------------------
+Package: gsap
+License: "Standard 'no charge' license: https://gsap.com/standard-license."
+
+
+--------------------------------------------------------------------------------
 Package: zone.js
 License: "MIT"
 
