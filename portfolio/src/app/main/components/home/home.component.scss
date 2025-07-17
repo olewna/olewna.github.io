@@ -3,6 +3,12 @@ main {
     padding-left: 30%;
     padding-right: 30%;
 
+    .anim {
+        opacity: 0;
+        transform: translateY(150px);
+        transition: transform .5s;
+    }
+
     .background-video {
         position: absolute;
         right: 0;
@@ -46,6 +52,15 @@ main {
 
         h1 {
             font-size: 64px;
+        }
+
+        h1.anim{
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        h1.name {
+            margin-bottom: 44px;
         }
     }
 }
