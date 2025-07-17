@@ -102,4 +102,22 @@ section {
     }
 }
 
+@media (max-width: 768px) {
+    section {
+        padding: 5px;
+
+        .images {
+            gap: 5px;
+            
+            img {
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+                display: block;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
 // TODO DODAĆ CZCIONKI

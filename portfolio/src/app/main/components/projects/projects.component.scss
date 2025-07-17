@@ -60,3 +60,14 @@ section {
         }
     }
 }
+
+@media (max-width: 768px) {
+    section {
+        padding: 5px;
+        // padding-top: 5%;
+
+        ul {
+            margin: 0;
+        }
+    }
+}
