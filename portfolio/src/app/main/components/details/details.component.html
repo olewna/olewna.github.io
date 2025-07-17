@@ -14,27 +14,27 @@
     
                     <ul class="images">
                         @for (image of project.images; track $index) {
-                        <li>
+                        <li class="image">
                             <img [src]="image.url" [alt]="project.title + ' image'" />
                         </li>
                     }
-                </ul>
+                    </ul>
                 
-                @if (project.videos && project.videos.length > 0) {
-                    <ul class="videos">
-                        @for (video of project.videos; track $index) {
-                            <li>
-                                <video controls>
-                                    <source [src]="video.url" type="video/mp4">
-                                </video>
-                            </li>
+                    @if (project.videos && project.videos.length > 0) {
+                        <ul class="videos">
+                            @for (video of project.videos; track $index) {
+                                <li class="video">
+                                    <video controls>
+                                        <source [src]="video.url" type="video/mp4">
+                                    </video>
+                                </li>
                             }
                         </ul>
                     }
     
-                    <p>{{project.description}}</p>
+                    <p class="description">{{project.description}}</p>
                     @for (link of project.links; track $index) {
-                        <a [href]="link" target="_blank"><i>{{link}}</i></a><br>
+                        <a class="link" [href]="link" target="_blank"><i>{{link}}</i></a><br>
                     }
                 </li>
             </ul>
