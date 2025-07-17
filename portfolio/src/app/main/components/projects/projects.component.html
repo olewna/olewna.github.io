@@ -5,11 +5,11 @@
         <ul>
             @for (project of projects; track project.id) {
             <li class="card" (click)="goToDetails(project.id)">
-                <div>
+                <div class="image anim">
                     <img [src]="project.images[0].url" [alt]="project.title + ' image'" />
                 </div>
-                <div class="language">{{project.languages}}</div>
-                <div class="title">{{project.title}}</div>
+                <div class="language anim">{{project.languages}}</div>
+                <div class="title anim">{{project.title}}</div>
             </li>
             }
         </ul>
