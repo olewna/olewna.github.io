@@ -8,11 +8,11 @@
                 "type": "frontend"
             },
             {
-                "name": "expressJS",
+                "name": "ExpressJS",
                 "type": "backend"
             },
             {
-                "name": "mongoDB",
+                "name": "MongoDB",
                 "type": "database"
             }
         ],
@@ -36,11 +36,11 @@
                 "type": "frontend"
             },
             {
-                "name": "expressJS",
+                "name": "ExpressJS",
                 "type": "backend"
             },
             {
-                "name": "mongoDB",
+                "name": "MongoDB",
                 "type": "database"
             }
         ],
@@ -85,7 +85,7 @@
                 "type": "frontend"
             },
             {
-                "name": "expressJS",
+                "name": "ExpressJS",
                 "type": "backend"
             },
             {
@@ -125,7 +125,7 @@
                 "type": "frontend"
             },
             {
-                "name": "expressJS",
+                "name": "ExpressJS",
                 "type": "backend"
             },
             {
@@ -204,7 +204,7 @@
         "languages": [
             {
                 "name": "Blender",
-                "type": "po prostu blender!"
+                "type": "po prostu Blender!"
             }
         ],
         "description": "Tworzyłem trochę kreacji w Blenderze, ucząc się od najlepszego polskiego blenderowego Guru. Nie jestem jakimś perfekcjonistą co do tego, ale przynajmniej coś porobiłem w tym, więc się pochwale! (Pierwszy link jest do kursu od Pana Piotao - serdecznie polecam!!!)",
