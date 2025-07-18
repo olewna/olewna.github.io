@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { AboutComponent } from './components/about/about.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,6 @@ import { AboutComponent } from './components/about/about.component';
     ProjectsComponent,
     AboutComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
 })
 export class MainModule {}

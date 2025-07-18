@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import gsap from 'gsap';
 
 @Component({
@@ -7,7 +8,17 @@ import gsap from 'gsap';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent implements AfterViewInit {
+  constructor(private translate: TranslateService) {}
+
   ngAfterViewInit(): void {
+    this.animateHome();
+
+    // this.translate.onLangChange.subscribe((event) => {
+    //   this.animateHome();
+    // });
+  }
+
+  animateHome() {
     gsap.to('.anim', {
       opacity: 1,
       y: 0,

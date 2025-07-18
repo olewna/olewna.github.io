@@ -1,7 +1,7 @@
 <section>
     <div class="container">
         @if (loading) {
-            <h1>Loading</h1>
+            <h1>{{ 'common.loading' | translate}}</h1>
         } @else {
             @if (project) {
                 <ul class="project">
@@ -9,7 +9,7 @@
                         <h1 class="title">{{project.title}}</h1>
         
                         <ul class="languages">
-                            <h3 class="technologies"><i>Wykorzystane technologie:</i></h3>
+                            <h3 class="technologies"><i>{{ "details.technologies" | translate}}</i></h3>
                             @for (language of project.languages; track $index) {
                             <li class="language"><i><span class="lang-type">{{language.type}}</span></i><span class="lang-name"> - {{language.name}}</span></li>
                             }
@@ -43,14 +43,12 @@
                 </ul>
         
             } @else {
-                <div>Nie znaleziono projektu z podanym id!</div>
+                <div>{{ "details.noProject" | translate}}</div>
             }
         }
     
         <div class="button">
-            <button class="btn" (click)="goBack()">Wróć</button>
+            <button class="btn" (click)="goBack()">{{ "common.back" | translate}}</button>
         </div>
     </div>
 </section>
-
-<!-- TODO ZROBIĆ ANIMACJE DLA KAŻDEGO Z DELAYEM -->

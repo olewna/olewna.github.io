@@ -4,17 +4,17 @@
     </div>
 
     <div class="about">
-        <h1>O Mnie</h1>
+        <h1>{{ "about.aboutMe" | translate}}</h1>
         
-        <h3>Nazywam się <span class="name">Oskar Lewna</span></h3>
+        <h3>{{"about.myName" | translate}} <span class="name">{{"about.fullName" | translate}}</span></h3>
 
-        <p>Jestem studentem magisterki na Uniwersytecie Gdańskim. Za sobą mam już ukończony licencjat z programowania. Aktualnie jestem w trakcie pisania pracy magisterskiej na temat 
-            <span class="important">Protokołów Populacyjnych</span>
+        <p>{{ "about.descriptionOne" | translate}}
+            <span class="important">{{ "about.thesis" | translate}}</span>
         </p>
 
         <br>
         
-        <p>Ciągle się rozwijam pod względem Frontendu, Backendu oraz GameDevu. Jestem uczciwą i pracowitą pszczółką</p>
+        <p>{{ "about.descriptionTwo" | translate}}</p>
         
         <div class="text-info">
             <img class="bee" src="assets/bee.svg" alt="pszczolka.png"/>
@@ -22,5 +22,4 @@
     </div>
 </section>
 
-<!-- TODO ZROBIĆ ANIMACJE DLA KAŻDEGO Z DELAYEM -->
 <!-- TODO ZROBIĆ GRADIENTOWY BACKGROUND KTÓRY SIĘ RUSZA -->

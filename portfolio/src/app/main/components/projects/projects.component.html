@@ -1,6 +1,6 @@
 <section>
     @if (loading) {
-        <div class="loading">Ładowanie...</div>
+        <div class="loading">{{ 'common.loading' | translate}}</div>
     } @else if (projects.length > 0) {
         <ul>
             @for (project of projects; track project.id) {
@@ -14,9 +14,8 @@
             }
         </ul>
     } @else {
-        <div>Nie ma projektów :((</div>
+        <div>{{ 'common.noProjects' | translate }}</div>
     }
 </section>
 
- <!-- TODO ZROBIĆ ANIMACJE DLA KAŻDEGO Z DELAYEM -->
 <!-- TODO ZROBIĆ GRADIENTOWY BACKGROUND KTÓRY SIĘ RUSZA -->

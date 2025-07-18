@@ -1,15 +1,13 @@
 <main>
     <video autoplay loop muted playsinline oncanplay="this.play()" onloadedmetadata="this.muted = true" class="background-video">
         <source src="assets/background-coding.mp4" type="video/mp4">
-        Przeglądarka nie jest wspierana
+        {{ "home.browserNotCompatible" | translate}}
     </video>
     <div class="home-text">
-        <h4 class="anim">Hejka!</h4>
-        <h1 class="pre-name anim">jestem</h1>
+        <h4 class="anim">{{ "home.hi" | translate }}</h4>
+        <h1 class="pre-name anim">{{ "home.preName" | translate}}</h1>
         <br> 
-        <h1 class="name anim">Oskar</h1>
-        <h3 class="anim"><i>Software Developer</i></h3>
+        <h1 class="name anim">{{ "home.name" | translate}}</h1>
+        <h3 class="anim"><i>{{ "home.role" | translate}}</i></h3>
     </div>
 </main>
-
-<!-- TODO ZROBIĆ ANIMACJE DLA KAŻDEGO Z DELAYEM -->
