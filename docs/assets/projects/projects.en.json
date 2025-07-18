@@ -1,22 +1,22 @@
 [
     {
         "id": "1",
-        "title": "Aplikacja bar z koktajlami",
+        "title": "Cocktail Bar App",
         "languages": [
             {
                 "name": "React v.18",
                 "type": "frontend"
             },
             {
-                "name": "expressJS",
+                "name": "ExpressJS",
                 "type": "backend"
             },
             {
-                "name": "mongoDB",
+                "name": "MongoDB",
                 "type": "database"
             }
         ],
-        "description": "Projekt stworzony podczas studiów. Obejmuje najważniejsze aspekty nowoczesnych aplikacji: zasady REST API, modernistyczny wygląd oraz bycie przyjazne dla użytkownika",
+        "description": "A project created during my studies. It encompasses the most important aspects of modern applications: REST API principles, a modern design, and user-friendliness.",
         "links": ["https://github.com/olewna/cocktailbar"],
         "images": [
             {
@@ -29,22 +29,22 @@
     },
     {
         "id": "2",
-        "title": "StreamDaylio - aplikacja do wybierania zestawu dla graczy",
+        "title": "StreamDaylio - App for drawing daily combo for gamers",
         "languages": [
             {
                 "name": "Angular v.16",
                 "type": "frontend"
             },
             {
-                "name": "expressJS",
+                "name": "ExpressJS",
                 "type": "backend"
             },
             {
-                "name": "mongoDB",
+                "name": "MongoDB",
                 "type": "database"
             }
         ],
-        "description": "Ten projekt to moja praca licencjacka. Wykorzystuje w nim model MVC (Model-View-Controller), Dependency Injection oraz oczywiście REST API. Baza danych MongoDB to dokumentowa baza - dokładniej została użyta chmurowa baza MongoDB - MongoDB Atlas. Nawet wystawiłem ją na azurze, jednak tylko na kilka miesięcy...",
+        "description": "This project is my bachelor's thesis. It uses the MVC (Model-View-Controller) model, Dependency Injection, and of course, the REST API. The MongoDB is a document-based database. Specifically for this project, the cloud-based MongoDB - MongoDB Atlas. I even deployed it on Azure, but only for a few months...",
         "links": ["https://github.com/olewna/licencjat"],
         "images": [
             {
@@ -78,14 +78,14 @@
     },
     {
         "id": "3",
-        "title": "Serwis Y - na wzór twittera",
+        "title": "Serwis Y - copy of twitter",
         "languages": [
             {
                 "name": "VueJS v.3",
                 "type": "frontend"
             },
             {
-                "name": "expressJS",
+                "name": "ExpressJS",
                 "type": "backend"
             },
             {
@@ -93,7 +93,7 @@
                 "type": "database"
             }
         ],
-        "description": "Projekt końcowy na przedmiot z VueJS. Aplikacja ma możliwość logowania, rejestracji, a po zalogowaniu dodawania wpisów, cytowania wpisów innych użytkowników i komentowania. Trudność tej aplikacji polegała na zrobienia zagnieżdżenia cytowania, aby dobrze były wyświetlane posty. Do projektu została wykorzystana baza danych Neo4J, która jest bazą grafową. Składa się z węzłów czyli obiektów oraz relacji. O wyborze tej bazy właśnie przeważyły relacje, które ułatwiają logikę aplikacji.",
+        "description": "The final project for a VueJS lectures. The application allows users to log in, register, and after logging in, add posts, quote other users' posts, and comment. The most challenging issue with this application was implementing nested quotes to ensure proper post display. The project utilizes the Neo4J database, a graph database composed of nodes (objects) and relationships. The choice of this database was determined by the relationships that makes the application's logic easier to understand.",
         "links": ["https://github.com/olewna/vue3_y.com"],
         "images": [
             {
@@ -118,14 +118,14 @@
     },
     {
         "id": "4",
-        "title": "Blog`o - internetowy blog",
+        "title": "Blog`o - online blog",
         "languages": [
             {
                 "name": "Angular v.16",
                 "type": "frontend"
             },
             {
-                "name": "expressJS",
+                "name": "ExpressJS",
                 "type": "backend"
             },
             {
@@ -133,7 +133,7 @@
                 "type": "database"
             }
         ],
-        "description": "Mały projekt, który miał na celu sprawdzenie znajomości Angulara jego mechanik i wzorców. W tym projekcie skupiłem się na strukturze projektu, aby była schludna i czytelna dla innych deweloperów. Design aplikacji jest prosty. W tym wypadku wykorzystałem bazę danych Neo4J, która jest bazą grafową, aby łatwiej było łączyć posty z użytkownikami poprzez relacje.",
+        "description": "A small project which purpouse was to test Angular's knowledge of its mechanics and patterns. In this application, I focused on the project's structure, making it neat and understandable for other developers. The application's design is simple. In this case, I used the Neo4J database, a graph database, to easily connect posts to users through relationships.",
         "links": ["https://github.com/olewna/angular_blog"],
         "images": [
             {
@@ -161,7 +161,7 @@
     },
     {
         "id": "5",
-        "title": "OSK LKD - strona  szkoły jazdy",
+        "title": "OSK LKD - driver training center website",
         "languages": [
             {
                 "name": "Angular v.17",
@@ -172,7 +172,7 @@
                 "type": "deployment"
             }
         ],
-        "description": "Projekt dla Ośrodka Szkolenia Kierowców LKD. Aplikacja jest napisana w Angularze w wersji 17, aby poznać jakie zmiany zaszły od poprzedniej wersji. Dodatkowo na stronie jest widoczna mapa z miejscem, gdzie znajduje się OSK LKD, a także są oceny klientów. Projekt jest zrobiony jako motyw i wystawiony na WordPressie. Przez ten aspekt musiałem dodatkowo poznać trochę PHP, żeby była możliwość stworzenia swojego własnego motywu strony. Strona jest w pełni responsywna, co uważam za swój sukces. :)",
+        "description": "A project for the LKD Driver Training Center. The application is written in Angular 17 to demonstrate the changes since the previous version. The website features a map showing the LKD driver training center's location, as well as customer reviews from Google. The project is designed as a theme and hosted on WordPress. This aspect also required me to learn a bit of PHP to create my own theme. The website is fully responsive, which I consider a big success. :)",
         "links": ["https://osk-lkd.pl"],
         "images": [
             {
@@ -200,14 +200,14 @@
     },
     {
         "id": "6",
-        "title": "Blenderowe kreacje",
+        "title": "Blender creations",
         "languages": [
             {
                 "name": "Blender",
-                "type": "po prostu blender!"
+                "type": "just Blender!"
             }
         ],
-        "description": "Tworzyłem trochę kreacji w Blenderze, ucząc się od najlepszego polskiego blenderowego Guru. Nie jestem jakimś perfekcjonistą co do tego, ale przynajmniej coś porobiłem w tym, więc się pochwale! (Pierwszy link jest do kursu od Pana Piotao - serdecznie polecam!!!)",
+        "description": "I've been creating some models and animations with Blender, learning from the best Polish Blender guru. I'm not a perfectionist, but at least I've done something with it, so I'll show it off! (The first link is to Mr. Piotao's course – I highly recommend it!!!)",
         "links": ["https://inf.ug.edu.pl/~piotao/zajecia/sylabusy/grafika/kurs.php","https://github.com/olewna/grafika_3D", "https://github.com/olewna/animancja"],
         "images": [
             {

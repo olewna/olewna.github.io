@@ -1,0 +1,34 @@
+{
+    "common": {
+        "back": "Wróć",
+        "loading": "Ładowanie...",
+        "noProjects": "Nie ma projektów :("
+    },
+    "navbar": {
+        "home": "Strona główna",
+        "projects": "Projekty",
+        "about": "O mnie"
+    },
+    "notFound": {
+        "text": "Tutaj nic nie ma!"
+    },
+    "home": {
+        "browserNotCompatible": "Przeglądarka nie jest wspierana!",
+        "hi": "Hejka!",
+        "preName": "Jestem",
+        "name": "Oskar",
+        "role": "Programista oprogramowania"
+    },
+    "details": {
+        "technologies": "Wykorzystane technologie:",
+        "noProject": "Nie znaleziono projektu z podanym id!"
+    },
+    "about": {
+        "aboutMe": "O Mnie",
+        "myName": "Nazywam się ",
+        "fullName": "Oskar Lewna",
+        "descriptionOne": "Jestem studentem magisterki na Uniwersytecie Gdańskim. Za sobą mam już ukończony licencjat z programowania. Aktualnie jestem w trakcie pisania pracy magisterskiej na temat ",
+        "thesis": "Protokołów Populacyjnych",
+        "descriptionTwo": "Ciągle się rozwijam pod względem Frontendu, Backendu oraz GameDevu. Jestem uczciwą i pracowitą pszczółką."
+    }
+}

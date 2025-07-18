@@ -1,0 +1,34 @@
+{
+    "common": {
+        "back": "Back",
+        "loading": "Loading...",
+        "noProjects": "No projects :("
+    },
+    "navbar" :{
+        "home": "Home",
+        "projects": "Projects",
+        "about": "About me"
+    },
+    "notFound": {
+        "text": "Nothing to see here!"
+    },
+    "home": {
+        "browserNotCompatible": "Browser is not supported!",
+        "hi": "Hi!",
+        "preName": "I'm",
+        "name": "Oskar",
+        "role": "Software Developer"
+    },
+    "details": {
+        "technologies": "Used technologies:",
+        "noProject": "Project with this ID not found!"
+    },
+    "about": {
+        "aboutMe": "About Me",
+        "myName": "My name is ",
+        "fullName": "Oskar Lewna",
+        "descriptionOne": "I'm a Master's student at the University of Gdańsk. I have already completed a Bachelor's degree in programming. I'm currently writing my Master's thesis on ",
+        "thesis": "Population Protocols",
+        "descriptionTwo": "I'm constantly developing my skills in frontend, backend, and game development. I'm an honest and hardworking bee."
+    }
+}
