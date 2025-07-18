@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import gsap from 'gsap';
 import { Subscription } from 'rxjs';
@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent implements AfterViewInit, OnDestroy {
   constructor(private translate: TranslateService) {}
 
   private sub!: Subscription;
@@ -38,5 +38,10 @@ export class HomeComponent implements AfterViewInit {
         duration: 0.6,
         stagger: 0.5,
       });
+  }
+
+  ngOnDestroy(): void {
+    this.sub.unsubscribe();
+    this.timeline.kill();
   }
 }

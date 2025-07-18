@@ -87,5 +87,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.sub.unsubscribe();
+    this.cardTimelines.forEach((tl) => tl.kill());
+    this.cardTimelines = [];
   }
 }

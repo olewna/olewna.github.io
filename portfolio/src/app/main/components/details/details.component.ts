@@ -25,7 +25,7 @@ export class DetailsComponent implements OnInit, OnDestroy {
   protected id!: string;
   protected loading = true;
   private sub!: Subscription;
-  private timeline: gsap.core.Timeline | null = null;
+  private timeline!: gsap.core.Timeline;
 
   ngOnInit(): void {
     this.loading = true;
@@ -68,7 +68,6 @@ export class DetailsComponent implements OnInit, OnDestroy {
 
     if (this.timeline) {
       this.timeline.kill();
-      this.timeline = null;
     }
     this.timeline = gsap.timeline();
 
@@ -140,5 +139,6 @@ export class DetailsComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.sub.unsubscribe();
+    this.timeline.kill();
   }
 }
