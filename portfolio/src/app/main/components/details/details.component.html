@@ -1,46 +1,50 @@
 <section>
     <div class="container">
-        @if (project) {
-            <ul class="project">
-                <li class="card">
-                    <h1 class="title">{{project.title}}</h1>
-    
-                    <ul class="languages">
-                        <h3 class="technologies"><i>Wykorzystane technologie:</i></h3>
-                        @for (language of project.languages; track $index) {
-                        <li class="language"><i><span class="lang-type">{{language.type}}</span></i><span class="lang-name"> - {{language.name}}</span></li>
-                        }
-                    </ul>
-    
-                    <ul class="images">
-                        @for (image of project.images; track $index) {
-                        <li class="image">
-                            <img [src]="image.url" [alt]="project.title + ' image'" />
-                        </li>
-                    }
-                    </ul>
-                
-                    @if (project.videos && project.videos.length > 0) {
-                        <ul class="videos">
-                            @for (video of project.videos; track $index) {
-                                <li class="video">
-                                    <video controls>
-                                        <source [src]="video.url" type="video/mp4">
-                                    </video>
-                                </li>
+        @if (loading) {
+            <h1>Loading</h1>
+        } @else {
+            @if (project) {
+                <ul class="project">
+                    <li class="card">
+                        <h1 class="title">{{project.title}}</h1>
+        
+                        <ul class="languages">
+                            <h3 class="technologies"><i>Wykorzystane technologie:</i></h3>
+                            @for (language of project.languages; track $index) {
+                            <li class="language"><i><span class="lang-type">{{language.type}}</span></i><span class="lang-name"> - {{language.name}}</span></li>
                             }
                         </ul>
-                    }
-    
-                    <p class="description">{{project.description}}</p>
-                    @for (link of project.links; track $index) {
-                        <a class="link" [href]="link" target="_blank"><i>{{link}}</i></a><br>
-                    }
-                </li>
-            </ul>
-    
-        } @else {
-            <div>Nie znaleziono projektu z podanym id!</div>
+        
+                        <ul class="images">
+                            @for (image of project.images; track $index) {
+                            <li class="image">
+                                <img [src]="image.url" [alt]="project.title + ' image'" />
+                            </li>
+                        }
+                        </ul>
+                    
+                        @if (project.videos && project.videos.length > 0) {
+                            <ul class="videos">
+                                @for (video of project.videos; track $index) {
+                                    <li class="video">
+                                        <video controls>
+                                            <source [src]="video.url" type="video/mp4">
+                                        </video>
+                                    </li>
+                                }
+                            </ul>
+                        }
+        
+                        <p class="description">{{project.description}}</p>
+                        @for (link of project.links; track $index) {
+                            <a class="link" [href]="link" target="_blank"><i>{{link}}</i></a><br>
+                        }
+                    </li>
+                </ul>
+        
+            } @else {
+                <div>Nie znaleziono projektu z podanym id!</div>
+            }
         }
     
         <div class="button">

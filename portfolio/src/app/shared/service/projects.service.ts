@@ -9,10 +9,12 @@ import { Project } from '../models/project.model';
 export class ProjectsService {
   constructor(private httpClient: HttpClient) {}
 
-  protected url: string = './assets/projects.json';
-  protected urlDev: string = '/assets/projects.json';
+  private url: string = './assets/projects.json';
+  private urlDev: string = '/assets/projects.json';
 
-  public getProjects(): Observable<Project[]> {
-    return this.httpClient.get<Project[]>(this.urlDev);
+  public getProjects(language: string): Observable<Project[]> {
+    return this.httpClient.get<Project[]>(
+      `assets/projects/projects.${language}.json`
+    );
   }
 }
