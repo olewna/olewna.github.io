@@ -5,9 +5,9 @@
 
     <div class="right-side">
         <ul class="nav-links desktop-nav">
-            <li><a (click)="gotoHome()">Strona główna</a></li>
-            <li><a (click)="gotoProjects()">Projekty</a></li>
-            <li><a (click)="gotoAbout()">O mnie</a></li>
+            <li><a (click)="gotoHome()">{{ 'navbar.home' | translate }}</a></li>
+            <li><a (click)="gotoProjects()">{{ 'navbar.projects' | translate}}</a></li>
+            <li><a (click)="gotoAbout()">{{ 'navbar.about' | translate}}</a></li>
             <!-- <li><a routerLink="/experience">Doświadczenie</a></li>
             <li><a routerLink="/skills">Umiejętności</a></li> -->
         </ul>
@@ -32,9 +32,9 @@
         <!-- Mobilne menu, które wysuwa się po kliknięciu -->
         @if (menuOpen) {
             <ul class="nav-links mobile-menu">
-                <li><a (click)="gotoHome(); closeMenu()">Strona główna</a></li>
-                <li><a (click)="gotoProjects(); closeMenu()">Projekty</a></li>
-                <li><a (click)="gotoAbout(); closeMenu()">O mnie</a></li>
+                <li><a (click)="gotoHome(); closeMenu()">{{ 'navbar.home' | translate}}</a></li>
+                <li><a (click)="gotoProjects(); closeMenu()">{{ 'navbar.projects' | translate}}</a></li>
+                <li><a (click)="gotoAbout(); closeMenu()">{{ 'navbar.about' | translate}}</a></li>
             </ul>
         }
     

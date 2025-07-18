@@ -1,0 +1,10 @@
+{
+    "common": {
+        "back": "Wróć"
+    },
+    "navbar": {
+        "home": "Strona główna",
+        "projects": "Projekty",
+        "about": "O mnie"
+    }
+}
