@@ -1,7 +1,8 @@
-import { Component, AfterViewInit, OnDestroy } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy, computed } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import gsap from 'gsap';
 import { Subscription } from 'rxjs';
+import { ThemeService } from '../../../shared/service/theme.service';
 
 @Component({
   selector: 'app-about',
@@ -9,12 +10,21 @@ import { Subscription } from 'rxjs';
   styleUrl: './about.component.scss',
 })
 export class AboutComponent implements AfterViewInit, OnDestroy {
-  constructor(private translate: TranslateService) {}
+  constructor(
+    private translate: TranslateService,
+    private themeService: ThemeService
+  ) {}
 
   private imgTimeline!: gsap.core.Timeline;
   private aboutTimeline!: gsap.core.Timeline;
   private sub!: Subscription;
   private firstChange: boolean = true;
+
+  public theme = computed(() => this.themeService.themeSignal());
+
+  toggleTheme() {
+    this.themeService.updateTheme();
+  }
 
   ngAfterViewInit(): void {
     this.animateImage();

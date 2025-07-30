@@ -1,4 +1,4 @@
-<section>
+<section [ngClass]="theme()">
     <div class="about-img">
         <img class="me" src="assets/me.jpeg"/>
     </div>
@@ -6,7 +6,7 @@
     <div class="about">
         <h1>{{ "about.aboutMe" | translate}}</h1>
         
-        <h3>{{"about.myName" | translate}} <span class="name">{{"about.fullName" | translate}}</span></h3>
+        <h3>{{"about.myName" | translate}} <br><span class="name">{{"about.fullName" | translate}}</span></h3>
 
         <p>{{ "about.descriptionOne" | translate}}
             <span class="important">{{ "about.thesis" | translate}}</span>

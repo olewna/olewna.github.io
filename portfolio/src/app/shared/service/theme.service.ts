@@ -12,5 +12,8 @@ export class ThemeService {
 
   updateTheme() {
     this.themeSignal.update((t) => (t === 'dark' ? 'light' : 'dark'));
+    const html = document.documentElement;
+    html.classList.remove('light', 'dark');
+    html.classList.add(this.themeSignal());
   }
 }
