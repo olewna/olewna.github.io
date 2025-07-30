@@ -1,3 +1,49 @@
+.light {
+    .language {
+        color: var(--another-font-color-light);
+    }
+
+    .card {
+        box-shadow: 0 4px 10px var(--border-color-nav-light);
+    }
+    
+    .card::before {
+        background-color: var(--background-card-light);
+        box-shadow: 0 4px 10px var(--border-color-nav-light);
+    }
+
+    .card:hover::before {
+        filter: brightness(0.97);
+    }
+
+    img {
+        border: 1px solid var(--border-color-nav-light);
+    }
+}
+
+.dark {
+    .language {
+        color: var(--another-font-color);
+    }
+
+    .card {
+        box-shadow: 0 4px 20px var(--border-color-nav);
+    }
+    
+    .card::before {
+        background-color: var(--background-card);
+        box-shadow: 0 4px 20px var(--border-color-nav);
+    }
+
+    .card:hover::before {
+        filter: brightness(1.2);
+    }
+
+    img {
+        border: 1px solid var(--border-color-nav);
+    }
+}
+
 section {
     padding-left: 20%;
     padding-right: 20%;
@@ -33,9 +79,9 @@ section {
                 margin-bottom: 1.5rem;
             }
     
-            .language {
-                color: var(--another-font-color);
-            }
+            // .language {
+            //     color: var(--another-font-color);
+            // }
         
             .title {
                 font-size: 32px;
@@ -50,13 +96,9 @@ section {
             content: '';
             position: absolute;
             inset: 0;
-            background-color: var(--background-card);
+            // background-color: var(--background-card);
             z-index: -1;
             transition: filter 0.3s ease;
-        }
-        
-        .card:hover::before {
-            filter: brightness(1.2);
         }
     }
 }

@@ -1,10 +1,17 @@
-import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
+import {
+  ChangeDetectorRef,
+  Component,
+  computed,
+  OnDestroy,
+  OnInit,
+} from '@angular/core';
 import { ProjectsService } from '../../../shared/service/projects.service';
 import { Router } from '@angular/router';
 import { Project, ProjectModel } from '../../../shared/models/project.model';
 import gsap from 'gsap';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
+import { ThemeService } from '../../../shared/service/theme.service';
 
 @Component({
   selector: 'app-projects',
@@ -16,13 +23,20 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     private service: ProjectsService,
     private router: Router,
     private cdr: ChangeDetectorRef,
-    private translate: TranslateService
+    private translate: TranslateService,
+    private themeService: ThemeService
   ) {}
 
   protected projects: ProjectModel[] = [];
   protected loading: boolean = true;
   private cardTimelines: gsap.core.Timeline[] = [];
   private sub!: Subscription;
+
+  public theme = computed(() => this.themeService.themeSignal());
+
+  toggleTheme() {
+    this.themeService.updateTheme();
+  }
 
   ngOnInit(): void {
     this.loading = true;

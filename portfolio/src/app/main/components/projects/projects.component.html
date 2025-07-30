@@ -1,4 +1,4 @@
-<section>
+<section [ngClass]="theme()">
     @if (loading) {
         <div class="loading">{{ 'common.loading' | translate}}</div>
     } @else if (projects.length > 0) {
