@@ -1,6 +1,7 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, computed, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { ThemeService } from '../../../shared/service/theme.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,10 +9,20 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
-  constructor(private router: Router, private translate: TranslateService) {
+  constructor(
+    private router: Router,
+    private translate: TranslateService,
+    private themeService: ThemeService
+  ) {
     const savedLanguage = localStorage.getItem('language') || 'pl';
     this.currentLanguage = savedLanguage;
     this.translate.use(savedLanguage);
+  }
+
+  public theme = computed(() => this.themeService.themeSignal());
+
+  toggleTheme() {
+    this.themeService.updateTheme();
   }
 
   // zamykanie okna z jezykami do wyboru i mobile nav bara

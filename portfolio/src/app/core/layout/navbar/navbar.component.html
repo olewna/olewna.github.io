@@ -1,4 +1,4 @@
-<nav class="navbar">
+<nav class="navbar" [ngClass]="theme()">
     <div class="logo">
         <span class="white">Port</span><span class="colored">folio</span>
     </div>
@@ -25,6 +25,10 @@
                     <li (click)="switchLanguage('pl'); closeLanguageMenu()"><span class="fi fi-pl"></span> Polski</li>
                 </ul>
             }
+        </div>
+
+        <div class="theme">
+            <button (click)="toggleTheme()">{{theme()}}</button>
         </div>
     
         <div class="menu-toggle mobile-nav" (click)="toggleMenu(); $event.stopPropagation()">☰</div>
