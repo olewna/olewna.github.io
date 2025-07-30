@@ -28,10 +28,24 @@
         </div>
 
         <div class="theme">
-            <button (click)="toggleTheme()">{{theme()}}</button>
+            <button class="theme-btn" (click)="toggleTheme()">
+                @if (theme() === "dark") {
+                    <span class="material-symbols-outlined">dark_mode</span>
+                } @else if (theme() === "light") {
+                    <span class="material-symbols-outlined">light_mode</span>
+                }
+            </button>
         </div>
     
-        <div class="menu-toggle mobile-nav" (click)="toggleMenu(); $event.stopPropagation()">☰</div>
+        <div class="menu-toggle mobile-nav" (click)="toggleMenu(); $event.stopPropagation()">
+            @if (menuOpen) {
+                <span class="material-symbols-outlined">
+                    menu_open
+                </span>
+            } @else {
+                <span class="material-symbols-outlined">menu</span>
+            }
+        </div>
         
         <!-- Mobilne menu, które wysuwa się po kliknięciu -->
         @if (menuOpen) {

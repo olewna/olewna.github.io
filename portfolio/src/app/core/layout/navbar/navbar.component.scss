@@ -118,6 +118,23 @@
                 }
             }
         }
+
+        .theme {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 16px;
+            
+            .theme-btn{
+                all: unset;
+                cursor: pointer;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
         
         .nav-links {
             list-style: none;
@@ -153,7 +170,6 @@
         }
         
         .menu-toggle {
-            text-align: center;
             display: none;
             font-size: 30px;
             cursor: pointer;
@@ -171,7 +187,10 @@
             }
         
             .menu-toggle {
-                display: block;
+                // display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 /* pokazujemy ikonkę menu */
             }
         }
