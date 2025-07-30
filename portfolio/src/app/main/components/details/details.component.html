@@ -1,4 +1,4 @@
-<section>
+<section [ngClass]="theme()">
     <div class="container">
         @if (loading) {
             <h1>{{ 'common.loading' | translate}}</h1>

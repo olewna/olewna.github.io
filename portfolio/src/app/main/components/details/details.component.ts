@@ -1,4 +1,10 @@
-import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
+import {
+  ChangeDetectorRef,
+  Component,
+  computed,
+  OnDestroy,
+  OnInit,
+} from '@angular/core';
 import { ProjectsService } from '../../../shared/service/projects.service';
 import { Project } from '../../../shared/models/project.model';
 import { ActivatedRoute } from '@angular/router';
@@ -6,6 +12,7 @@ import { Location } from '@angular/common';
 import gsap from 'gsap';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
+import { ThemeService } from '../../../shared/service/theme.service';
 
 @Component({
   selector: 'app-details',
@@ -18,7 +25,8 @@ export class DetailsComponent implements OnInit, OnDestroy {
     private route: ActivatedRoute,
     private location: Location,
     private cdr: ChangeDetectorRef,
-    private translate: TranslateService
+    private translate: TranslateService,
+    private themeService: ThemeService
   ) {}
 
   protected project: Project | null = null;
@@ -26,6 +34,12 @@ export class DetailsComponent implements OnInit, OnDestroy {
   protected loading = true;
   private sub!: Subscription;
   private timeline!: gsap.core.Timeline;
+
+  public theme = computed(() => this.themeService.themeSignal());
+
+  toggleTheme() {
+    this.themeService.updateTheme();
+  }
 
   ngOnInit(): void {
     this.loading = true;
