@@ -1,7 +1,14 @@
-import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  computed,
+  OnDestroy,
+  OnInit,
+} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import gsap from 'gsap';
 import { Subscription } from 'rxjs';
+import { ThemeService } from '../../../shared/service/theme.service';
 
 @Component({
   selector: 'app-home',
@@ -9,10 +16,19 @@ import { Subscription } from 'rxjs';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent implements AfterViewInit, OnDestroy {
-  constructor(private translate: TranslateService) {}
+  constructor(
+    private translate: TranslateService,
+    private themeService: ThemeService
+  ) {}
 
   private sub!: Subscription;
   private timeline!: gsap.core.Timeline;
+
+  public theme = computed(() => this.themeService.themeSignal());
+
+  toggleTheme() {
+    this.themeService.updateTheme();
+  }
 
   ngAfterViewInit(): void {
     this.animateHome();

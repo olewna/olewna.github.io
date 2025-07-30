@@ -1,7 +1,20 @@
+.light {
+    background-color: rgba(245,245,255, 0.8);
+}
+
+.dark {
+    background-color: rgba(10, 10, 20, 0.8);
+}
+
+.background-video.light {
+    filter: invert(1);
+}
+
 main {
     padding-top: 12%;
     padding-left: 30%;
     padding-right: 30%;
+    // position: relative;
 
     .background-video {
         position: absolute;
@@ -34,7 +47,7 @@ main {
     .home-text {
         // width: 25%;
         display: inline-block;
-        background-color: rgba(10, 10, 20, 0.8);
+        // background-color: rgba(10, 10, 20, 0.8);
         padding: 24px;
         border-radius: 12px;
 

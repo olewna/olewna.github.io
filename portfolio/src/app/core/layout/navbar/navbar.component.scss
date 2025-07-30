@@ -15,6 +15,12 @@
     .nav-links li a {
         color: var(--font-color-light);
     }
+    
+    .mobile-menu {
+        background: var(--background-color-light);
+        border-left: 1px solid var(--border-color-nav-light);
+        border-bottom: 1px solid var(--border-color-nav-light);
+    }
 }
 
 .dark {
@@ -30,9 +36,15 @@
         border-left: 1px solid var(--border-color-nav);
         border-bottom: 1px solid var(--border-color-nav);
     }
-
+    
     .nav-links li a {
         color: var(--font-color);
+    }
+    
+    .mobile-menu {
+        background: var(--background-color);
+        border-left: 1px solid var(--border-color-nav);
+        border-bottom: 1px solid var(--border-color-nav);
     }
 }
 
@@ -134,7 +146,7 @@
             position: absolute;
             top: 70px;
             right: 0;
-            background: #111;
+            // background: #111;
             padding: 15px;
             width: 200px;
             gap: 10px;

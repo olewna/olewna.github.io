@@ -1,9 +1,9 @@
 <main>
-    <video autoplay loop muted playsinline oncanplay="this.play()" onloadedmetadata="this.muted = true" class="background-video">
+    <video autoplay loop muted playsinline oncanplay="this.play()" onloadedmetadata="this.muted = true" class="background-video" [ngClass]="theme()">
         <source src="assets/background-coding.mp4" type="video/mp4">
         {{ "home.browserNotCompatible" | translate}}
     </video>
-    <div class="home-text">
+    <div class="home-text" [ngClass]="theme()">
         <h4 class="anim">{{ "home.hi" | translate }}</h4>
         <h1 class="pre-name anim">{{ "home.preName" | translate}}</h1>
         <br> 
