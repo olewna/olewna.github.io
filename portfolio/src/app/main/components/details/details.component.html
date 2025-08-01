@@ -14,14 +14,16 @@
                             <li class="language"><i><span class="lang-type">{{language.type}}</span></i><span class="lang-name"> - {{language.name}}</span></li>
                             }
                         </ul>
-        
-                        <ul class="images">
+
+                        <app-swiper class="images" [images]="project.images" [title]="project.title"></app-swiper>
+
+                        <!-- <ul class="images">
                             @for (image of project.images; track $index) {
                             <li class="image">
                                 <img [src]="image.url" [alt]="project.title + ' image'" />
                             </li>
                         }
-                        </ul>
+                        </ul> -->
                     
                         @if (project.videos && project.videos.length > 0) {
                             <ul class="videos">

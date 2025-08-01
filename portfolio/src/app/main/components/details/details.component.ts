@@ -59,7 +59,7 @@ export class DetailsComponent implements OnInit, OnDestroy {
         const result = res.filter((x) => x.id == this.id);
 
         if (result.length > 0) {
-          console.log('XD');
+          // console.log('XD');
           this.project = result[0];
 
           setTimeout(() => {
@@ -92,7 +92,7 @@ export class DetailsComponent implements OnInit, OnDestroy {
       .set(card.querySelector('.title'), { opacity: 0, y: -100 })
       .set(card.querySelector('.technologies'), { opacity: 0, y: -100 })
       .set(card.querySelectorAll('.language'), { opacity: 0, y: -100 })
-      .set(card.querySelectorAll('.image'), { opacity: 0, y: -100 })
+      .set(card.querySelector('.images'), { opacity: 0, y: -100 })
       .set(card.querySelector('.description'), { opacity: 0, y: -100 })
       .set(card.querySelectorAll('.link'), { opacity: 0, y: -100 });
     if (videoSelector.length > 0) {
@@ -116,7 +116,7 @@ export class DetailsComponent implements OnInit, OnDestroy {
         duration: 0.5,
         stagger: 0.1,
       })
-      .to(card.querySelectorAll('.image'), {
+      .to(card.querySelector('.images'), {
         opacity: 1,
         y: 0,
         duration: 0.5,
