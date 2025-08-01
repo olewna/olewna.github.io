@@ -15,7 +15,7 @@
                             }
                         </ul>
 
-                        <app-swiper class="images" [images]="project.images" [title]="project.title"></app-swiper>
+                        <app-swiper class="images" [isVideos]="false" [images]="project.images" [title]="project.title"></app-swiper>
 
                         <!-- <ul class="images">
                             @for (image of project.images; track $index) {
@@ -26,7 +26,8 @@
                         </ul> -->
                     
                         @if (project.videos && project.videos.length > 0) {
-                            <ul class="videos">
+                            <app-swiper class="videos" [isVideos]="true" [videos]="project.videos" [title]="project.title"></app-swiper>
+                            <!-- <ul class="videos">
                                 @for (video of project.videos; track $index) {
                                     <li class="video">
                                         <video controls>
@@ -34,7 +35,7 @@
                                         </video>
                                     </li>
                                 }
-                            </ul>
+                            </ul> -->
                         }
         
                         <p class="description">{{project.description}}</p>

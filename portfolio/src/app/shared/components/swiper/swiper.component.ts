@@ -7,7 +7,7 @@ import {
   Input,
   ViewChild,
 } from '@angular/core';
-import { Image } from '../../models/project.model';
+import { Image, Video } from '../../models/project.model';
 import { ThemeService } from '../../service/theme.service';
 
 @Component({
@@ -23,12 +23,14 @@ export class SwiperComponent {
   @ViewChild('swiperContainer') swiperContainer!: ElementRef;
 
   @Input() images: Image[] = [];
-  test_images2 = [
-    'https://swiperjs.com/demos/images/nature-7.jpg',
-    'https://swiperjs.com/demos/images/nature-7.jpg',
-    'https://swiperjs.com/demos/images/nature-7.jpg',
-    'https://swiperjs.com/demos/images/nature-7.jpg',
-  ];
+  @Input() videos: Video[] = [];
+  @Input() isVideos: boolean = false;
+  // test_images2 = [
+  //   'https://swiperjs.com/demos/images/nature-7.jpg',
+  //   'https://swiperjs.com/demos/images/nature-7.jpg',
+  //   'https://swiperjs.com/demos/images/nature-7.jpg',
+  //   'https://swiperjs.com/demos/images/nature-7.jpg',
+  // ];
   @Input() title: string = '';
 
   public theme = computed(() => this.themeService.themeSignal());
@@ -37,10 +39,6 @@ export class SwiperComponent {
     this.themeService.updateTheme();
   }
 
-  // onSlideChange() {
-  //   console.log('Zmieniono slajd');
-  // }
-
   goNext() {
     // Dostęp do API Swipera przez właściwość .swiper
     this.swiperContainer.nativeElement.swiper.slideNext();
@@ -48,11 +46,5 @@ export class SwiperComponent {
 
   goPrev() {
     this.swiperContainer.nativeElement.swiper.slidePrev();
-  }
-
-  onImageLoad() {
-    if (this.swiperContainer && this.swiperContainer.nativeElement.swiper) {
-      this.swiperContainer.nativeElement.swiper.update();
-    }
   }
 }

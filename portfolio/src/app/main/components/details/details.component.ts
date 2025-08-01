@@ -85,7 +85,7 @@ export class DetailsComponent implements OnInit, OnDestroy {
     }
     this.timeline = gsap.timeline();
 
-    const videoSelector = card.querySelectorAll('.video');
+    const videoSelector = card.querySelector('.videos');
 
     // ustawianie
     this.timeline
@@ -95,8 +95,8 @@ export class DetailsComponent implements OnInit, OnDestroy {
       .set(card.querySelector('.images'), { opacity: 0, y: -100 })
       .set(card.querySelector('.description'), { opacity: 0, y: -100 })
       .set(card.querySelectorAll('.link'), { opacity: 0, y: -100 });
-    if (videoSelector.length > 0) {
-      this.timeline.set(card.querySelectorAll('.video'), {
+    if (videoSelector) {
+      this.timeline.set(card.querySelector('.videos'), {
         opacity: 0,
         y: -100,
       });
@@ -123,8 +123,8 @@ export class DetailsComponent implements OnInit, OnDestroy {
         stagger: 0.1,
       });
 
-    if (videoSelector.length > 0) {
-      this.timeline.to(card.querySelectorAll('.video'), {
+    if (videoSelector) {
+      this.timeline.to(card.querySelector('.videos'), {
         opacity: 1,
         y: 0,
         duration: 0.5,
