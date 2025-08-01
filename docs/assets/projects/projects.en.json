@@ -1,0 +1,223 @@
+[
+    {
+        "id": "1",
+        "title": "Cocktail Bar App",
+        "languages": [
+            {
+                "name": "React v.18",
+                "type": "frontend"
+            },
+            {
+                "name": "ExpressJS",
+                "type": "backend"
+            },
+            {
+                "name": "MongoDB",
+                "type": "database"
+            }
+        ],
+        "description": "A project created during my studies. It encompasses the most important aspects of modern applications: REST API principles, a modern design, and user-friendliness.",
+        "links": ["https://github.com/olewna/cocktailbar"],
+        "images": [
+            {
+                "url": "assets/1/2.png"
+            },
+            {
+                "url": "assets/1/3.png"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "title": "StreamDaylio - App for drawing daily combo for gamers",
+        "languages": [
+            {
+                "name": "Angular v.16",
+                "type": "frontend"
+            },
+            {
+                "name": "ExpressJS",
+                "type": "backend"
+            },
+            {
+                "name": "MongoDB",
+                "type": "database"
+            }
+        ],
+        "description": "This project is my bachelor's thesis. It uses the MVC (Model-View-Controller) model, Dependency Injection, and of course, the REST API. The MongoDB is a document-based database. Specifically for this project, the cloud-based MongoDB - MongoDB Atlas. I even deployed it on Azure, but only for a few months...",
+        "links": ["https://github.com/olewna/licencjat"],
+        "images": [
+            {
+                "url": "assets/2/1.png"
+            },
+            {
+                "url": "assets/2/2.png"
+            },
+            {
+                "url": "assets/2/3.png"
+            },
+            {
+                "url": "assets/2/4.png"
+            },
+            {
+                "url": "assets/2/5.png"
+            },
+            {
+                "url": "assets/2/6.png"
+            },
+            {
+                "url": "assets/2/8.png"
+            },
+            {
+                "url": "assets/2/9.png"
+            },
+            {
+                "url": "assets/2/10.png"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "title": "Serwis Y - copy of twitter",
+        "languages": [
+            {
+                "name": "VueJS v.3",
+                "type": "frontend"
+            },
+            {
+                "name": "ExpressJS",
+                "type": "backend"
+            },
+            {
+                "name": "Neo4J",
+                "type": "database"
+            }
+        ],
+        "description": "The final project for a VueJS lectures. The application allows users to log in, register, and after logging in, add posts, quote other users' posts, and comment. The most challenging issue with this application was implementing nested quotes to ensure proper post display. The project utilizes the Neo4J database, a graph database composed of nodes (objects) and relationships. The choice of this database was determined by the relationships that makes the application's logic easier to understand.",
+        "links": ["https://github.com/olewna/vue3_y.com"],
+        "images": [
+            {
+                "url": "assets/3/1.png"
+            },
+            {
+                "url": "assets/3/2.png"
+            },
+            {
+                "url": "assets/3/3.png"
+            },
+            {
+                "url": "assets/3/4.png"
+            },
+            {
+                "url": "assets/3/5.png"
+            },
+            {
+                "url": "assets/3/6.png"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "title": "Blog`o - online blog",
+        "languages": [
+            {
+                "name": "Angular v.16",
+                "type": "frontend"
+            },
+            {
+                "name": "ExpressJS",
+                "type": "backend"
+            },
+            {
+                "name": "Neo4J",
+                "type": "database"
+            }
+        ],
+        "description": "A small project which purpouse was to test Angular's knowledge of its mechanics and patterns. In this application, I focused on the project's structure, making it neat and understandable for other developers. The application's design is simple. In this case, I used the Neo4J database, a graph database, to easily connect posts to users through relationships.",
+        "links": ["https://github.com/olewna/angular_blog"],
+        "images": [
+            {
+                "url": "assets/4/1.png"
+            },
+            {
+                "url": "assets/4/2.png"
+            },
+            {
+                "url": "assets/4/3.png"
+            },
+            {
+                "url": "assets/4/4.png"
+            },
+            {
+                "url": "assets/4/5.png"
+            },
+            {
+                "url": "assets/4/6.png"
+            },
+            {
+                "url": "assets/4/7.png"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "title": "OSK LKD - driver training center website",
+        "languages": [
+            {
+                "name": "Angular v.17",
+                "type": "frontend"
+            },
+            {
+                "name": "WordPress",
+                "type": "deployment"
+            }
+        ],
+        "description": "A project for the LKD Driver Training Center. The application is written in Angular 17 to demonstrate the changes since the previous version. The website features a map showing the LKD driver training center's location, as well as customer reviews from Google. The project is designed as a theme and hosted on WordPress. This aspect also required me to learn a bit of PHP to create my own theme. The website is fully responsive, which I consider a big success. :)",
+        "links": ["https://osk-lkd.pl"],
+        "images": [
+            {
+                "url": "assets/5/1.png"
+            },
+            {
+                "url": "assets/5/2.png"
+            },
+            {
+                "url": "assets/5/3.png"
+            },
+            {
+                "url": "assets/5/4.png"
+            },
+            {
+                "url": "assets/5/5.png"
+            },
+            {
+                "url": "assets/5/6.png"
+            },
+            {
+                "url": "assets/5/7.png"
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "title": "Blender creations",
+        "languages": [
+            {
+                "name": "Blender",
+                "type": "just Blender!"
+            }
+        ],
+        "description": "I've been creating some models and animations with Blender, learning from the best Polish Blender guru. I'm not a perfectionist, but at least I've done something with it, so I'll show it off! (The first link is to Mr. Piotao's course – I highly recommend it!!!)",
+        "links": ["https://inf.ug.edu.pl/~piotao/zajecia/sylabusy/grafika/kurs.php","https://github.com/olewna/grafika_3D", "https://github.com/olewna/animancja"],
+        "images": [
+            {
+                "url": "assets/blender/dynia.png"
+            }            
+        ],
+        "videos": [
+            {
+                "url": "assets/blender/final_animacja.mp4"
+            }
+        ]
+    }
+]
