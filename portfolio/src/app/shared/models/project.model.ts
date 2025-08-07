@@ -2,7 +2,7 @@ export interface Project {
   id: string;
   title: string;
   languages: Language[];
-  description: string;
+  description: string[];
   links: string[];
   videos: Video[];
   images: Image[];

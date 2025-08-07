@@ -37,8 +37,11 @@
                                 }
                             </ul> -->
                         }
-        
-                        <p class="description">{{project.description}}</p>
+                        
+                        @for (desc of project.description; track $index) {
+                            <p class="description">{{desc}}</p>
+                        }
+
                         @for (link of project.links; track $index) {
                             <a class="link" [href]="link" target="_blank"><i>{{link}}</i></a><br>
                         }

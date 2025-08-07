@@ -16,7 +16,7 @@
                 "type": "database"
             }
         ],
-        "description": "A project created during my studies. It encompasses the most important aspects of modern applications: REST API principles, a modern design, and user-friendliness.",
+        "description": ["A project created during my studies. It encompasses the most important aspects of modern applications: REST API principles, a modern design, and user-friendliness."],
         "links": ["https://github.com/olewna/cocktailbar"],
         "images": [
             {
@@ -44,7 +44,7 @@
                 "type": "database"
             }
         ],
-        "description": "This project is my bachelor's thesis. It uses the MVC (Model-View-Controller) model, Dependency Injection, and of course, the REST API. The MongoDB is a document-based database. Specifically for this project, the cloud-based MongoDB - MongoDB Atlas. I even deployed it on Azure, but only for a few months...",
+        "description": ["This project is my bachelor's thesis. It uses the MVC (Model-View-Controller) model, Dependency Injection, and of course, the REST API.","The MongoDB is a document-based database. Specifically for this project, the cloud-based MongoDB - MongoDB Atlas.","I even deployed it on Azure, but only for a few months..."],
         "links": ["https://github.com/olewna/licencjat"],
         "images": [
             {
@@ -93,7 +93,7 @@
                 "type": "database"
             }
         ],
-        "description": "The final project for a VueJS lectures. The application allows users to log in, register, and after logging in, add posts, quote other users' posts, and comment. The most challenging issue with this application was implementing nested quotes to ensure proper post display. The project utilizes the Neo4J database, a graph database composed of nodes (objects) and relationships. The choice of this database was determined by the relationships that makes the application's logic easier to understand.",
+        "description": ["The final project for a VueJS lectures. The application allows users to log in, register, and after logging in, add posts, quote other users' posts, and comment.","The most challenging issue with this application was implementing nested quotes to ensure proper post display.","The project utilizes the Neo4J database, a graph database composed of nodes (objects) and relationships. The choice of this database was determined by the relationships that makes the application's logic easier to understand."],
         "links": ["https://github.com/olewna/vue3_y.com"],
         "images": [
             {
@@ -133,7 +133,7 @@
                 "type": "database"
             }
         ],
-        "description": "A small project which purpouse was to test Angular's knowledge of its mechanics and patterns. In this application, I focused on the project's structure, making it neat and understandable for other developers. The application's design is simple. In this case, I used the Neo4J database, a graph database, to easily connect posts to users through relationships.",
+        "description": ["A small project which purpouse was to test Angular's knowledge of its mechanics and patterns. In this application, I focused on the project's structure, making it neat and understandable for other developers.","The application's design is simple.","In this case, I used the Neo4J database, a graph database, to easily connect posts to users through relationships."],
         "links": ["https://github.com/olewna/angular_blog"],
         "images": [
             {
@@ -172,7 +172,7 @@
                 "type": "deployment"
             }
         ],
-        "description": "A project for the LKD Driver Training Center. The application is written in Angular 17 to demonstrate the changes since the previous version. The website features a map showing the LKD driver training center's location, as well as customer reviews from Google. The project is designed as a theme and hosted on WordPress. This aspect also required me to learn a bit of PHP to create my own theme. The website is fully responsive, which I consider a big success. :)",
+        "description": ["A project for the LKD Driver Training Center. The application is written in Angular 17 to demonstrate the changes since the previous version.","The website features a map showing the LKD driver training center's location, as well as customer reviews from Google. The project is designed as a theme and hosted on WordPress. This aspect also required me to learn a bit of PHP to create my own theme.","The website is fully responsive, which I consider a big success. :)"],
         "links": ["https://osk-lkd.pl"],
         "images": [
             {
@@ -207,7 +207,7 @@
                 "type": "just Blender!"
             }
         ],
-        "description": "I've been creating some models and animations with Blender, learning from the best Polish Blender guru. I'm not a perfectionist, but at least I've done something with it, so I'll show it off! (The first link is to Mr. Piotao's course – I highly recommend it!!!)",
+        "description": ["I've been creating some models and animations with Blender, learning from the best Polish Blender guru.","I'm not a perfectionist, but at least I've done something with it, so I'll show it off!","(The first link is to Mr. Piotao's course – I highly recommend it!!!)"],
         "links": ["https://inf.ug.edu.pl/~piotao/zajecia/sylabusy/grafika/kurs.php","https://github.com/olewna/grafika_3D", "https://github.com/olewna/animancja"],
         "images": [
             {
@@ -218,6 +218,89 @@
             {
                 "url": "assets/blender/final_animacja.mp4"
             }
+        ]
+    },
+    {
+        "id": "7",
+        "title": "stocks API",
+        "languages": [
+            {
+                "name": ".NET 9",
+                "type": "api"
+            },
+            {
+                "name": "SQL",
+                "type":"database"
+            },
+            {
+                "name":"Angular",
+                "type":"frontend"
+            }
+        ],
+        "description": ["A project I made while learning .NET and C#. Full CRUD operations with stocks, comments to that stocks and portfolios of users. Uses JWT to authenticate user. I created a database with Entity Framwork in SSMS. Frontend is W.I.P. but API is fully working and can be tested with Swagger"],
+        "links": ["https://github.com/olewna/dotnet-app"],
+        "images": [
+            {
+                "url": "assets/6/1.png"
+            },            
+            {
+                "url": "assets/6/2.png"
+            },            
+            {
+                "url": "assets/6/3.png"
+            },            
+            {
+                "url": "assets/6/4.png"
+            },            
+            {
+                "url": "assets/6/5.png"
+            }            
+        ]
+    },
+    {
+        "id": "8",
+        "title": "Simple contact app",
+        "languages": [
+            {
+                "name": ".NET 9",
+                "type": "api"
+            },
+            {
+                "name": "SQL",
+                "type":"database"
+            },
+            {
+                "name":"Angular",
+                "type":"frontend"
+            }
+        ],
+        "description": ["A simple application with contacts. The biggest issue with this was making Category and Subcategory as entities from database so that admin can add new category and user can added his own subcategory if category is 'other'. Frontend design is minimalist, I mainly focused on the structure of this project.","Functionalities: logging in and viewing contacts for non-logged-in users; editing, deleting and adding contacts for logged-in users."],
+        "links": ["https://github.com/olewna/netpc"],
+        "images": [
+            {
+                "url": "assets/7/1.png"
+            },            
+            {
+                "url": "assets/7/2.png"
+            },            
+            {
+                "url": "assets/7/3.png"
+            },            
+            {
+                "url": "assets/7/4.png"
+            },            
+            {
+                "url": "assets/7/5.png"
+            },            
+            {
+                "url": "assets/7/6.png"
+            },            
+            {
+                "url": "assets/7/7.png"
+            },            
+            {
+                "url": "assets/7/8.png"
+            }            
         ]
     }
 ]

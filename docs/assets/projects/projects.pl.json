@@ -44,7 +44,7 @@
                 "type": "database"
             }
         ],
-        "description": "Ten projekt to moja praca licencjacka. Wykorzystuje w nim model MVC (Model-View-Controller), Dependency Injection oraz oczywiście REST API. Baza danych MongoDB to dokumentowa baza - dokładniej została użyta chmurowa baza MongoDB - MongoDB Atlas. Nawet wystawiłem ją na azurze, jednak tylko na kilka miesięcy...",
+        "description": ["Ten projekt to moja praca licencjacka. Wykorzystuje w nim model MVC (Model-View-Controller), Dependency Injection oraz oczywiście REST API.","Baza danych MongoDB to dokumentowa baza - dokładniej została użyta chmurowa baza MongoDB - MongoDB Atlas.","Nawet wystawiłem ją na azurze, jednak tylko na kilka miesięcy..."],
         "links": ["https://github.com/olewna/licencjat"],
         "images": [
             {
@@ -93,7 +93,7 @@
                 "type": "database"
             }
         ],
-        "description": "Projekt końcowy na przedmiot z VueJS. Aplikacja ma możliwość logowania, rejestracji, a po zalogowaniu dodawania wpisów, cytowania wpisów innych użytkowników i komentowania. Trudność tej aplikacji polegała na zrobienia zagnieżdżenia cytowania, aby dobrze były wyświetlane posty. Do projektu została wykorzystana baza danych Neo4J, która jest bazą grafową. Składa się z węzłów czyli obiektów oraz relacji. O wyborze tej bazy właśnie przeważyły relacje, które ułatwiają logikę aplikacji.",
+        "description": ["Projekt końcowy na przedmiot z VueJS. Aplikacja ma możliwość logowania, rejestracji, a po zalogowaniu dodawania wpisów, cytowania wpisów innych użytkowników i komentowania.","Trudność tej aplikacji polegała na zrobienia zagnieżdżenia cytowania, aby dobrze były wyświetlane posty.", "Do projektu została wykorzystana baza danych Neo4J, która jest bazą grafową. Składa się z węzłów czyli obiektów oraz relacji. O wyborze tej bazy właśnie przeważyły relacje, które ułatwiają logikę aplikacji."],
         "links": ["https://github.com/olewna/vue3_y.com"],
         "images": [
             {
@@ -133,7 +133,7 @@
                 "type": "database"
             }
         ],
-        "description": "Mały projekt, który miał na celu sprawdzenie znajomości Angulara jego mechanik i wzorców. W tym projekcie skupiłem się na strukturze projektu, aby była schludna i czytelna dla innych deweloperów. Design aplikacji jest prosty. W tym wypadku wykorzystałem bazę danych Neo4J, która jest bazą grafową, aby łatwiej było łączyć posty z użytkownikami poprzez relacje.",
+        "description": ["Mały projekt, który miał na celu sprawdzenie znajomości Angulara jego mechanik i wzorców. W tym projekcie skupiłem się na strukturze projektu, aby była schludna i czytelna dla innych deweloperów.","Design aplikacji jest prosty.", "W tym wypadku wykorzystałem bazę danych Neo4J, która jest bazą grafową, aby łatwiej było łączyć posty z użytkownikami poprzez relacje."],
         "links": ["https://github.com/olewna/angular_blog"],
         "images": [
             {
@@ -172,7 +172,7 @@
                 "type": "deployment"
             }
         ],
-        "description": "Projekt dla Ośrodka Szkolenia Kierowców LKD. Aplikacja jest napisana w Angularze w wersji 17, aby poznać jakie zmiany zaszły od poprzedniej wersji. Dodatkowo na stronie jest widoczna mapa z miejscem, gdzie znajduje się OSK LKD, a także są oceny klientów. Projekt jest zrobiony jako motyw i wystawiony na WordPressie. Przez ten aspekt musiałem dodatkowo poznać trochę PHP, żeby była możliwość stworzenia swojego własnego motywu strony. Strona jest w pełni responsywna, co uważam za swój sukces. :)",
+        "description": ["Projekt dla Ośrodka Szkolenia Kierowców LKD. Aplikacja jest napisana w Angularze w wersji 17, aby poznać jakie zmiany zaszły od poprzedniej wersji.", "Dodatkowo na stronie jest widoczna mapa z miejscem, gdzie znajduje się OSK LKD, a także są oceny klientów. Projekt jest zrobiony jako motyw i wystawiony na WordPressie. Przez ten aspekt musiałem dodatkowo poznać trochę PHP, żeby była możliwość stworzenia swojego własnego motywu strony.", "Strona jest w pełni responsywna, co uważam za swój sukces. :)"],
         "links": ["https://osk-lkd.pl"],
         "images": [
             {
@@ -207,7 +207,7 @@
                 "type": "po prostu Blender!"
             }
         ],
-        "description": "Tworzyłem trochę kreacji w Blenderze, ucząc się od najlepszego polskiego blenderowego Guru. Nie jestem jakimś perfekcjonistą co do tego, ale przynajmniej coś porobiłem w tym, więc się pochwale! (Pierwszy link jest do kursu od Pana Piotao - serdecznie polecam!!!)",
+        "description": ["Tworzyłem trochę kreacji w Blenderze, ucząc się od najlepszego polskiego blenderowego Guru.","Nie jestem jakimś perfekcjonistą co do tego, ale przynajmniej coś porobiłem w tym, więc się pochwale!","(Pierwszy link jest do kursu od P. Piotao - serdecznie polecam!!!)"],
         "links": ["https://inf.ug.edu.pl/~piotao/zajecia/sylabusy/grafika/kurs.php","https://github.com/olewna/grafika_3D", "https://github.com/olewna/animancja"],
         "images": [
             {
@@ -218,6 +218,91 @@
             {
                 "url": "assets/blender/final_animacja.mp4"
             }
+        ]
+    },
+    {
+        "id": "7",
+        "title": "API z akcjami",
+        "languages": [
+            {
+                "name": ".NET 9",
+                "type": "api"
+            },
+            {
+                "name": "SQL",
+                "type":"database"
+            },
+            {
+                "name":"Angular",
+                "type":"frontend"
+            }
+        ],
+        "description": ["Projekt, który stworzyłem ucząc się .NET i C#. Pełne operacje CRUD z akcjami, komentarzami do akcji i portfelami użytkowników. Używa JWT do uwierzytelniania użytkowników. Stworzyłem bazę danych z Entity Framework w SSMS. Frontend jest w trakcie realizacji, ale API działa i można je testować za pomocą Swaggera."],
+        "links": ["https://github.com/olewna/dotnet-app"],
+        "images": [
+            {
+                "url": "assets/6/1.png"
+            },            
+            {
+                "url": "assets/6/2.png"
+            },            
+            {
+                "url": "assets/6/3.png"
+            },            
+            {
+                "url": "assets/6/4.png"
+            },            
+            {
+                "url": "assets/6/5.png"
+            }            
+        ]
+    },
+    {
+        "id": "8",
+        "title": "Prosta aplikacja z kontaktami",
+        "languages": [
+            {
+                "name": ".NET 9",
+                "type": "api"
+            },
+            {
+                "name": "SQL",
+                "type":"database"
+            },
+            {
+                "name":"Angular",
+                "type":"frontend"
+            }
+        ],
+        "description": [
+            "Prosta aplikacja z kontaktami. Największym problemem było przekształcenie kategorii i podkategorii w encje w bazie danych, aby administrator mógł dodawać nowe kategorie, a użytkownik mógł dodawać własne podkategorie, jeśli kategoria to „inne”. Design frontendu jest minimalistyczny; skupiłem się głównie na strukturze projektu.", 
+            "Funkcjonalności: logowanie i przeglądanie kontaktów dla niezalogowanych użytkowników; edytowanie, usuwanie i dodawanie kontaktów dla zalogowanych użytkowników."],
+        "links": ["https://github.com/olewna/netpc"],
+        "images": [
+            {
+                "url": "assets/7/1.png"
+            },            
+            {
+                "url": "assets/7/2.png"
+            },            
+            {
+                "url": "assets/7/3.png"
+            },            
+            {
+                "url": "assets/7/4.png"
+            },            
+            {
+                "url": "assets/7/5.png"
+            },            
+            {
+                "url": "assets/7/6.png"
+            },            
+            {
+                "url": "assets/7/7.png"
+            },            
+            {
+                "url": "assets/7/8.png"
+            }            
         ]
     }
 ]

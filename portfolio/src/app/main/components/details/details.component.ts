@@ -93,7 +93,7 @@ export class DetailsComponent implements OnInit, OnDestroy {
       .set(card.querySelector('.technologies'), { opacity: 0, y: -100 })
       .set(card.querySelectorAll('.language'), { opacity: 0, y: -100 })
       .set(card.querySelector('.images'), { opacity: 0, y: -100 })
-      .set(card.querySelector('.description'), { opacity: 0, y: -100 })
+      .set(card.querySelectorAll('.description'), { opacity: 0, y: -100 })
       .set(card.querySelectorAll('.link'), { opacity: 0, y: -100 });
     if (videoSelector) {
       this.timeline.set(card.querySelector('.videos'), {
@@ -132,7 +132,7 @@ export class DetailsComponent implements OnInit, OnDestroy {
       });
     }
     this.timeline
-      .to(card.querySelector('.description'), {
+      .to(card.querySelectorAll('.description'), {
         opacity: 1,
         y: 0,
         duration: 0.5,
